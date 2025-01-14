@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>fUN FOR THE WHOLE FAMILY</title>
+    <title>Fun For The Whole Family!</title>
     <style></style>
   </head>
   <body>
-    <input id="inSert" type="text" onkeyup="woahDude()">
+    <input id="inSert" type="text" onkeyup="woahDude()" onkeydown="ohBoy()">
+    <audio id="auDio"></audio>
     <script>
         function woahDude() {
             var gaybow = ['#ff00ff', '#0000ff', '#00ff00', '#ffff00', 
@@ -19,6 +20,18 @@
             var myEyes = gaybow[(Math.floor(Math.random() * gaybow.length))];
 
             document.body.style.background = myEyes;
+        };
+
+        function ohBoy() {
+
+            var brainRot = ['1.mp3', '2.mp3', '3.mp3', '4.mp3', 
+                            '5.mp3', '6.mp3', '7.mp3', '8.mp3', 
+                            '9.mp3', '10.mp3', '11.mp3', '12.mp3'];
+
+            var enJoy = brainRot[(Math.floor(Math.random() * 12))];
+
+            document.getElementById("auDio").src = enJoy;
+            document.getElementById("auDio").play();
         };
     </script>
   </body>
