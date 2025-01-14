@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <style></style>
+  </head>
+  <body>
+    <input id="inSert" type="text" onkeyup="woahDude()">
+    <script>
+        function woahDude() {
+            var gaybow = ['#ff00ff', '#0000ff', '#00ff00', '#ffff00', 
+                          '#8921C2', '#FE39A4', '#FFFDBB', '#53E8D4', 
+                          '#ff0000', '#ffffff', '#25C4F8', '#5B33FE'
+                        ];
+
+            var myEyes = gaybow[(Math.floor(Math.random() * gaybow.length))];
+
+            document.body.style.background = myEyes;
+        };
+    </script>
+  </body>
+</html>
